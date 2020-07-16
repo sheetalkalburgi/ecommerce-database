@@ -1,4 +1,4 @@
-# E-Commrce Database Management System
+# E-Commerce Database Management System
 
 # Introduction
 This project primarily focuses on exploring database design and various aspects related to the database management system for ‘Kart’ an e-commerce business. 
