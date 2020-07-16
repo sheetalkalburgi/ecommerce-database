@@ -1,13 +1,13 @@
 # E-Commerce Database Management System
 
-# Introduction
+## Introduction
 This project primarily focuses on exploring database design and various aspects related to the database management system for ‘Kart’ an e-commerce business. 
 
 ‘Kart’ is an online shopping platform for consumer items of the latest trends and styles. This project explores the life cycle of a product from the time the customer places an order to when the customer receives their order; from a business and database management perspective. The project also shows use of analytics to calculate revenue, find business opportunities in products of high demand, use of purchase pattern recognition for personalized recommendation to customers and gain a sense of customers’ engagement rate with the application. These statistics can help the business improve their products and services for enhanced customer satisfaction. E-commerce business has to manage the consumer and merchant (seller) side of the business and logistics related to shipping. This project explores the consumer side of the business while the merchant and the logistics aspects of the business are beyond the scope of this project.
 
 The main purpose of this project is to build an effective database management system for ‘Kart’ to fulfill all business requirements along with obtaining useful data insights guiding towards making better business decisions. Data for the project is a mix of real-world data and manually compiled data. The data for customers, current orders, order history and payments have been compiled in excel. Product details, product reviews are taken from Amazon website for real products. The data schema is prepared in MySQL workbench and the data has been uploaded from excel to MySQL Workbench. Data schema includes 10 entities with multiple attributes to capture customer and orders related information. The dataset helps us understand the life cycle of a customer’s order from the moment an order is placed. 
 
-# Entities and Attributes
+## Entities and Attributes
   - **Customer:** This entity is created to hold information about the customer and their demographic. Each customer has to be assigned with a unique customer_id. Each time a customer places an order, a new order_id is generated. This allows us to track multiple purchases made by the same customer.
   - **Current Order:** This entity is created to hold information about the current orders i.e. order in process and yet to be delivered. When an order is placed the order status of record is I (i.e. in progress) or R if return request is placed by customer. Order status changes to S when the order is picked for shipping. Separate entity created for current orders as the order in process goes through multiple updates.
   - **Order History** When an order is delivered to the customer, order status is changed from S to C (i.e. complete), or when the return order reaches the seller then order status changes from S to R (i.e. returned). It is assumed that the backend software system moves the order record from current_order table to order_history table once the order is complete/returned.
@@ -19,7 +19,7 @@ The main purpose of this project is to build an effective database management sy
   - **Product**: This entity is created to collect information related to the product. They collect Product dimensions information like weight, height, width and other details such as product name, category, unit price is recorded.
   - **Seller:** This entity is created to store the seller information like seller demographics and assigns unique seller_id to each seller. This table can help to match customers’ order with sellers based on zip codes to reduce the shipping cost.
   
-#Inference
+## Inference
 
 The project helped to gain an overall sense of organizational structure and database management from an e-commerce business perspective. Additionally, it also helped to identify different functional areas in a business, entities associated with these functional areas and attributes related to it. While designing the model for the project, a better understanding of modelling relationship, cardinality of relationship, normalization to avoid anomalies in data in the relational model was obtained. The project also gave hands-on experience of creating end-to-end relational database management systems in MySQL workbench.
 
