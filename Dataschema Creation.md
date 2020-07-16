@@ -32,7 +32,7 @@ Now that the entity tables are created and loaded with data, meaningful insights
 
 ## 4. Analysis using SQL
 
-From the data in the database developed, many questions can be answered that can be vital in making important business decisions for Kart. SQL queries used for the below analysis are available here:
+From the data in the database developed, many questions can be answered that can be vital in making important business decisions for Kart. SQL queries used for the below analysis are available here: https://github.com/sheetalkalburgi/ecommerce-database/blob/master/queries.sql
 
 ### What is the total revenue for the month of May 2020 up until May 20, 2020?
 Monthly revenue can be critical for business executives of Kart for making important decisions including looking at the products which are generating high income. Kart has to pay its employees, warehouse rent, warehouse maintenance, etc. Looking at the revenue for a particular month can help to determine how the coming month will look like for Kart. To find the revenue generated, the following steps can be applied: 
